@@ -47,10 +47,12 @@ public class HeroMovement : MonoBehaviour
         if (agent.velocity.magnitude > 0.1f && agent.remainingDistance > agent.stoppingDistance)
         {
             animator.SetBool("isWalking", true); // Trigger walking animation
+            Debug.Log("Walking - Velocity: " + agent.velocity.magnitude);
         }
         else
         {
             animator.SetBool("isWalking", false); // Stop walking animation
+            Debug.Log("Idle - Velocity: " + agent.velocity.magnitude);
         }
     }
 }
