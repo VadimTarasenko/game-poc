@@ -1,0 +1,11 @@
+{
+    "asset": "c6fce2b3c8045443e8f7dce445e3275d",
+    "fileName": "019adffa-4c1d-76e5-92e4-74f389c8dcd0.pose.json",
+    "prompt": "walk for spectre_econ\n",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 475369288,
+    "w3CTraceId": "6566e7650a8dfea9b340bca6c0233c03",
+    "isTrimmed": false
+}
