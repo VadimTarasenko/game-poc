@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 21618675}
   - component: {fileID: 21618674}
   - component: {fileID: 21618673}
+  - component: {fileID: 21618677}
   m_Layer: 0
   m_Name: TopDownCamera
   m_TagString: MainCamera
@@ -256,6 +257,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &21618677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21618672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3594ec089fa76444e94eae87628f1460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainCameraFocus
+  target: {fileID: 1605098262}
+  offset: {x: 0, y: 10, z: 0}
 --- !u!1001 &63161298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604393361012190857, guid: 6d22cb59a855741de8da3725eb7ea9bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.14907
+      value: 3.86
       objectReference: {fileID: 0}
     - target: {fileID: 6604393361012190857, guid: 6d22cb59a855741de8da3725eb7ea9bf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -282,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604393361012190857, guid: 6d22cb59a855741de8da3725eb7ea9bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.18118
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 6604393361012190857, guid: 6d22cb59a855741de8da3725eb7ea9bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -880,6 +895,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1605098262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3f5db1024d4e545f8b6df7bcae727d3d, type: 3}
+  m_PrefabInstance: {fileID: 1605098254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1938411045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1455061866885250186, guid: 6d22cb59a855741de8da3725eb7ea9bf, type: 3}
