@@ -1,0 +1,11 @@
+{
+    "asset": "ba8c26dae4361584dbbaed2526e73c5f",
+    "fileName": "019ae983-6cfe-702e-a03a-89e0a4d6875b_Preview.png",
+    "prompt": "land terrain with grass and soil",
+    "negativePrompt": "",
+    "model": "44ec3749-963a-44b1-aa54-dc19f6ed8ab2",
+    "modelName": "Unity Texture2D",
+    "customSeed": 954822457,
+    "w3CTraceId": "b18ba9c586dfbc8cfa0260b61f87372f",
+    "refinementMode": "Generation"
+}
