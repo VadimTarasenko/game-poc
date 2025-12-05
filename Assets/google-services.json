@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292581083532",
+    "project_id": "game-poc-740d3",
+    "storage_bucket": "game-poc-740d3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292581083532:android:d9ea6e07161e94df59aea9",
+        "android_client_info": {
+          "package_name": "com.riseofdivinity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_OqbnWKVbJDn42OWf4rUS5aiuC0cGpO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

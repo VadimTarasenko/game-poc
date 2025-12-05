@@ -38,3 +38,13 @@ node_modules/
 *.unitypackage
 *.exe
 *.app
+
+# Firebase large native libraries (over 100MB GitHub limit)
+Assets/Firebase/Plugins/x86_64/*.bundle
+Assets/Firebase/Plugins/x86_64/*.so
+
+# Unity AI Toolkit generated assets
+GeneratedAssets/
+
+# iOS static libraries
+Assets/Plugins/iOS/*.a
