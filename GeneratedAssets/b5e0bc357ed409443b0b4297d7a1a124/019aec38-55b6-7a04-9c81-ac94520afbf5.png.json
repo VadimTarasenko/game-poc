@@ -1,0 +1,20 @@
+{
+    "asset": "b5e0bc357ed409443b0b4297d7a1a124",
+    "fileName": "019aec38-55b6-7a04-9c81-ac94520afbf5.png",
+    "prompt": "make changes according this explanation:The error occurs because the dimensions of your texture ( login-bg.jpg ) are 1200x675, and the DXT1/BC1 compression format requires both width and height to be divisible by 4. You can resolve this issue by resizing the texture to dimensions that are multiples of 4, such as 1200x672 or 1200x676. After resizing, re-import the texture into Unity and ensure the  Texture Type  is set to  Sprite (2D and UI)  in the Inspector. \n",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "6908c3eb03228ab5c4ff978d99281330",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
