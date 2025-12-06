@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5a9e5d626fc43af4897d956e8e3ad907
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307457
+  packageName: Dragon20
+  packageVersion: 1.0
+  assetPath: Assets/Dragon20/Shader/Double_Sided_Standard.shader
+  uploadId: 722692
