@@ -20,7 +20,7 @@ public class MainCameraFocus : MonoBehaviour
             currentYRotation = Mathf.LerpAngle(currentYRotation, targetYRotation, Time.deltaTime * rotationSpeed);
 
             // Set the camera rotation
-            transform.rotation = Quaternion.Euler(70, currentYRotation, 0);
+            transform.rotation = Quaternion.Euler(90, currentYRotation, 0);
         }
     }
 }

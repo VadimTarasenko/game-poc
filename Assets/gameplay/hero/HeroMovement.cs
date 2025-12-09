@@ -6,59 +6,29 @@ using UnityEngine.AI;
 
 public class HeroMovement : MonoBehaviour
 {
-    Camera mainCamera;
-    NavMeshAgent agent;
-    Animator animator;
+    public Controller circularController; // Reference to the CircularController script
+    public float moveSpeed = 5f; // Speed of the player
+    public float rotationSpeed = 10f;
 
-    void Start()
+    private void Update()
     {
-        agent = GetComponent<NavMeshAgent>();
-        if (agent == null)
-        {
-            Debug.LogError("NavMeshAgent component is missing on the GameObject.");
-        }
+        // Get the input direction from the circular controller
+        Vector2 inputDirection = circularController.InputDirection;
 
-        mainCamera = Camera.main;
-        if (mainCamera == null)
+        // Check if there is any input
+        if (inputDirection != Vector2.zero)
         {
-            Debug.LogError("No camera tagged as 'MainCamera' found in the scene.");
-        }
+            // Convert the 2D input direction to 3D movement
+            Vector3 movement = new Vector3(inputDirection.x, 0, inputDirection.y);
 
-        animator = GetComponent<Animator>();
-        if (animator == null)
-        {
-            Debug.LogError("Animator component is missing on the GameObject.");
-        }
-    }
+            // Move the player
+            transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            
-            if(Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out hit))
-            {
-                agent.SetDestination(hit.point);
-            }
-        }
+            // Calculate the rotation direction
+            Quaternion targetRotation = Quaternion.LookRotation(movement);
 
-        bool isWalking = animator.GetBool("isWalking");
- 
-        // Check if the agent is moving
-        if (agent.velocity.magnitude > 0.1f && agent.remainingDistance > agent.stoppingDistance)
-        {
-            if (!isWalking)
-            {   
-                animator.SetBool("isWalking", true); // Trigger walking animation
-            }
-        }
-        else
-        {
-            if (isWalking)
-            {
-                animator.SetBool("isWalking", false); // Stop walking animation
-            }
+            // Smoothly rotate the player towards the movement direction
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
     }
 }
