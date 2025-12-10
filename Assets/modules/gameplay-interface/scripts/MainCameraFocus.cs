@@ -18,9 +18,6 @@ public class MainCameraFocus : MonoBehaviour
             // Smoothly interpolate the Y rotation
             float targetYRotation = target.eulerAngles.y;
             currentYRotation = Mathf.LerpAngle(currentYRotation, targetYRotation, Time.deltaTime * rotationSpeed);
-
-            // Set the camera rotation
-            transform.rotation = Quaternion.Euler(90, currentYRotation, 0);
         }
     }
 }
