@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.riseofdivinity</string>
+	<string>com.worldofthefirstflame</string>
 	<key>PROJECT_ID</key>
 	<string>game-poc-740d3</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:292581083532:ios:7b5060daf0cf0f8059aea9</string>
+	<string>1:292581083532:ios:5fa955c184c8e1e959aea9</string>
 </dict>
 </plist>

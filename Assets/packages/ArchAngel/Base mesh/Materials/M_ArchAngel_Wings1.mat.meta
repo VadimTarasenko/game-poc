@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bce939bef4e743b43a986a683dd67258
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320944
+  packageName: ArchAngel
+  packageVersion: 1.0
+  assetPath: Assets/ArchAngel/Base mesh/Materials/M_ArchAngel_Wings1.mat
+  uploadId: 758377

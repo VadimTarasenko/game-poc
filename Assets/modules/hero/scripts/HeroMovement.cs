@@ -1,13 +1,9 @@
-// 12/2/2025 AI-Tag
-// This was created with the help of Assistant, a Unity Artificial Intelligence product.
-
 using UnityEngine;
-using UnityEngine.AI;
 
 public class HeroMovement : MonoBehaviour
 {
-    public Controller circularController; // Reference to the CircularController script
-    public float moveSpeed = 5f; // Speed of the player
+    public Controller circularController;
+    public float moveSpeed = 5f;
     public float rotationSpeed = 10f;
 
     private Animator animator;
@@ -31,6 +27,7 @@ public class HeroMovement : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
+            animator.CrossFade("Walking State", 0f);
             animator.SetBool("isWalking", true);
         }
         else

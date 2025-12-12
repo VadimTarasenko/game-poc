@@ -8,7 +8,7 @@ using Firebase.Auth;
 using UnityEngine;
 using System.Threading.Tasks;
 
-public class FirebaseAuthManager : MonoBehaviour
+public class SignUp : MonoBehaviour
 {
     private FirebaseAuth auth;
 
@@ -21,10 +21,10 @@ public class FirebaseAuthManager : MonoBehaviour
     public void OnCreateAccountButtonClick()
     {
         // Call the async SignUp method
-        SignUp();
+        CreateUser();
     }
 
-    private async void SignUp()
+    private async void CreateUser()
     {
         string email = "test@example.com"; // Replace with actual email input
         string password = "password123";   // Replace with actual password input

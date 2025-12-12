@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7e76e2e685cf742588dbc358184f6cfe
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325048
+  packageName: Ultimate RPG UI
+  packageVersion: 1.0
+  assetPath: Assets/FastSolutions/Ultimate RPG UI/Scripts/DemoScript.cs
+  uploadId: 769339
