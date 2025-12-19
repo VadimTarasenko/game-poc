@@ -7,6 +7,7 @@ public class HeroMovement : MonoBehaviour
     public float rotationSpeed = 10f;
 
     private Animator animator;
+    private bool isRunning = false;
 
     private void Start()
     {
@@ -27,12 +28,16 @@ public class HeroMovement : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-            animator.CrossFade("Walking State", 0f);
-            animator.SetBool("isWalking", true);
+            if (!isRunning)
+            {
+                animator.CrossFade("Run", 0f);
+                isRunning = true;
+            }
         }
-        else
+        else if (isRunning)
         {
-            animator.SetBool("isWalking", false);
+            animator.CrossFade("Idle2", 0f);
+            isRunning = false;
         }
     }
 }
