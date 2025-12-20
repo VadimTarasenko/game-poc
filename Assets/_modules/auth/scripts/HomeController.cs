@@ -20,12 +20,12 @@ public class HomeController : MonoBehaviour
         heroAgilityText.text = hero.agility.ToString();
         heroPowerText.text = hero.power.ToString();
         heroIntelligenceText.text = hero.intelligence.ToString();
-        Debug.Log("Experience: " + hero.experience);
     }
 
     public void OnJourneyClick()
     {
-        SceneManager.LoadScene("HomeScene");
+        Debug.Log("OnJourneyClick");
+        SceneManager.LoadScene("JourneyScene");
     }
 
 }
