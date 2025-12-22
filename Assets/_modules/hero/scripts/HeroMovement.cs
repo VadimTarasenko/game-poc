@@ -36,7 +36,7 @@ public class HeroMovement : MonoBehaviour
         }
         else if (isRunning)
         {
-            animator.CrossFade("Idle2", 0f);
+            animator.CrossFade("Idle3", 0f);
             isRunning = false;
         }
     }

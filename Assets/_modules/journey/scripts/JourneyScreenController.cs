@@ -10,6 +10,6 @@ public class JourneyScreenController : MonoBehaviour
 
     public void PlayJourneyScene()
     {
-        SceneManager.LoadScene("MapTheFirstLightWood");
+        SceneManager.LoadScene("map_v2");
     }
 }

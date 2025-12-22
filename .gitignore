@@ -50,3 +50,15 @@ GeneratedAssets/
 
 # iOS static libraries
 Assets/Plugins/iOS/*.a
+
+# Unity packages (should not be in version control)
+*.unitypackage
+
+# Unity crash dumps
+mono_crash*.json
+
+# Large imported asset packs (can be re-imported from Unity Asset Store)
+Assets/Toby Fredson/
+Assets/Toby Fredson.meta
+Assets/Animated PBR Chest Demo/
+Assets/Animated PBR Chest Demo.meta
